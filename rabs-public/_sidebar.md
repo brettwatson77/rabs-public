@@ -1,7 +1,1 @@
-- [Home](README.md)
-- [Code Rules](codeRULES.md)
-- [Doc Guide](docGUIDE.md)
-- [Autonomy Model](autonomy-authority.md)
-- [Inner/Outer DB](IOdb.md)
-- [Dev Log](devlog.md)
-- [Alternatives Considered](asc.md)
+- [_sidebar](_sidebar.md)
