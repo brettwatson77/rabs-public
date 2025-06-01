@@ -1,31 +1,18 @@
-- **assets/**
-  - [README](assets/README.md)
+- [assets](assets/README.md)
 - **backend/**
-  - **brainframe/**
-    - [README](backend/brainframe/README.md)
+  - [brainframe](backend/brainframe/README.md)
   - [README](backend/README.md)
-- [codeRULES](codeRULES.md)
-- [docGUIDE](docGUIDE.md)
-- **docs/**
-  - [README](docs/README.md)
-- **frontend-next/**
-  - [README](frontend-next/README.md)
-- **frontend-reactnative/**
-  - [README](frontend-reactnative/README.md)
-- **frontend-vite/**
-  - [README](frontend-vite/README.md)
-- **middleware/**
-  - [README](middleware/README.md)
-- **rabs-public/**
-- [README](README.md)
-- **scripts/**
-  - [publicpush](scripts/publicpush.js)
-  - [README](scripts/README.md)
-- **swift-iOS/**
-  - [README](swift-iOS/README.md)
-- **swift-tvOS/**
-  - [README](swift-tvOS/README.md)
-- **swift-watchOS/**
-  - [README](swift-watchOS/README.md)
+- [docs](docs/README.md)
+- [frontend-next](frontend-next/README.md)
+- [frontend-reactnative](frontend-reactnative/README.md)
+- [frontend-vite](frontend-vite/README.md)
+- [middleware](middleware/README.md)
+- [scripts](scripts/README.md)
+- [swift-iOS](swift-iOS/README.md)
+- [swift-tvOS](swift-tvOS/README.md)
+- [swift-watchOS](swift-watchOS/README.md)
 - **tests/**
   - [MRmonitor](tests/MRmonitor.js)
+- [codeRULES](codeRULES.md)
+- [docGUIDE](docGUIDE.md)
+- [README](README.md)
