@@ -1,4 +1,8 @@
-- [assets](assets/README.md)
+- **assets/**
+  - **doc/**
+  - **image/**
+  - **video/**
+  - [README](assets/README.md)
 - **backend/**
   - [brainframe](backend/brainframe/README.md)
   - [README](backend/README.md)
@@ -12,7 +16,7 @@
 - [swift-tvOS](swift-tvOS/README.md)
 - [swift-watchOS](swift-watchOS/README.md)
 - **tests/**
-  - [MRmonitor](tests/MRmonitor.js)
+  - [MRmonitor.js](tests/MRmonitor.js.md)
 - [codeRULES](codeRULES.md)
 - [docGUIDE](docGUIDE.md)
 - [README](README.md)
