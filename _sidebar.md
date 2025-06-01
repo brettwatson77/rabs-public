@@ -9,15 +9,10 @@
     - [star.jpg](assets/image/star.jpg)
   - **video/**
     - [Ballad.mp4](assets/video/Ballad.mp4)
-    - [Ballad.mp4](assets/video/Ballad.mp4.md)
     - [Frozen Assets.mp4](assets/video/Frozen Assets.mp4)
-    - [Frozen Assets.mp4](assets/video/Frozen Assets.mp4.md)
     - [PCshare.mp4](assets/video/PCshare.mp4)
-    - [PCshare.mp4](assets/video/PCshare.mp4.md)
     - [Stand Tall Single.mp4](assets/video/Stand Tall Single.mp4)
-    - [Stand Tall Single.mp4](assets/video/Stand Tall Single.mp4.md)
     - [TSshare.mp4](assets/video/TSshare.mp4)
-    - [TSshare.mp4](assets/video/TSshare.mp4.md)
   - [README](assets/README.md)
 - **backend/**
   - [brainframe](backend/brainframe/README.md)
@@ -27,12 +22,13 @@
 - [frontend-reactnative](frontend-reactnative/README.md)
 - [frontend-vite](frontend-vite/README.md)
 - [middleware](middleware/README.md)
-- [scripts](scripts/README.md)
+- **scripts/**
+  - [publicpush-almost.js](scripts/publicpush-almost.js.md)
+  - [README](scripts/README.md)
 - [swift-iOS](swift-iOS/README.md)
 - [swift-tvOS](swift-tvOS/README.md)
 - [swift-watchOS](swift-watchOS/README.md)
-- **tests/**
-  - [MRmonitor.js](tests/MRmonitor.js.md)
+- [tests](tests/MRmonitor.js.md)
 - [codeRULES](codeRULES.md)
 - [docGUIDE](docGUIDE.md)
 - [LICENSE.txt](LICENSE.txt)
