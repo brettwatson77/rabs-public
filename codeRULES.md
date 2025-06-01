@@ -1,5 +1,7 @@
 # codeRULES.md
 
+RABS (Real-time Adaptive Backend System) is a private operational platform developed by Disability South West LTD to coordinate all administrative, operational, staffing, client, programming, facilities, and account needs. It integrates a structured AI agent (Reggie) and supports full task automation, dynamic documentation, multi-platform frontends, public-safe mirroring, a cognitive brainframe, novel context analytics, and bi-directional autonomy. Reginald Atticus Benedict Singleton III — at your service.
+
 This document defines the **code conventions**, **folder structure**, and **project-wide standards** for all source code in the RABS system. It is designed to be used by both human developers and intelligent agents (like Reggie) for consistency, clarity, and maintainability.
 
 ---
