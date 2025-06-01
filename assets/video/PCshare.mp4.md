@@ -6,5 +6,5 @@
 </video>
 
 <p style="text-align:center; margin-top:0.5em;">
-  <a href="./PCshare.mp4" download>Download PCshare.mp4</a>
+  <a href="./PCshare.mp4" download>PCshare.mp4</a>
 </p>

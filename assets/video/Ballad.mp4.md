@@ -6,5 +6,5 @@
 </video>
 
 <p style="text-align:center; margin-top:0.5em;">
-  <a href="./Ballad.mp4" download>Download Ballad.mp4</a>
+  <a href="./Ballad.mp4" download>Ballad.mp4</a>
 </p>
