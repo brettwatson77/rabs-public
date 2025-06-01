@@ -1,7 +1,17 @@
 - **assets/**
   - **doc/**
   - **image/**
+    - [Ballad.mp4](assets/image/Ballad.mp4)
+    - [Ballad.mp4](assets/image/Ballad.mp4.md)
+    - [Frozen Assets.mp4](assets/image/Frozen Assets.mp4)
+    - [Frozen Assets.mp4](assets/image/Frozen Assets.mp4.md)
+    - [Stand Tall Single.mp4](assets/image/Stand Tall Single.mp4)
+    - [Stand Tall Single.mp4](assets/image/Stand Tall Single.mp4.md)
   - **video/**
+    - [PCshare.mp4](assets/video/PCshare.mp4)
+    - [PCshare.mp4](assets/video/PCshare.mp4.md)
+    - [TSshare.mp4](assets/video/TSshare.mp4)
+    - [TSshare.mp4](assets/video/TSshare.mp4.md)
   - [README](assets/README.md)
 - **backend/**
   - [brainframe](backend/brainframe/README.md)
@@ -19,4 +29,5 @@
   - [MRmonitor.js](tests/MRmonitor.js.md)
 - [codeRULES](codeRULES.md)
 - [docGUIDE](docGUIDE.md)
+- [LICENSE.txt](LICENSE.txt)
 - [README](README.md)
