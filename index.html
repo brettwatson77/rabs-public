@@ -7,9 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
     <style>
-      .markdown-section pre > code { white-space: pre-wrap !important; }
-      .content { padding-bottom: 50px; }
-      .markdown-section video { display: block; margin: 1em auto; max-width: 100%; border: 1px solid #ddd; border-radius: 4px; }
+      /* Base styles */
+      :root {
+        --theme-color: #42b983;
+        --content-max-width: 1200px;
+      }
+      
+      /* Better typography */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #2c3e50;
+      }
+      
+      /* Improved code blocks */
+      .markdown-section pre > code {
+        white-space: pre-wrap !important;
+        border-radius: 6px;
+        padding: 1.2em !important;
+        font-size: 0.9em;
+        line-height: 1.5;
+      }
+      
+      /* Content area */
+      .content {
+        padding-bottom: 50px;
+        max-width: var(--content-max-width);
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      
+      /* Media elements */
+      .markdown-section img,
+      .markdown-section video,
+      .markdown-section iframe {
+        display: block;
+        margin: 2em auto;
+        max-width: 100%;
+        border-radius: 6px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      
+      .markdown-section video {
+        background: #000;
+      }
+      
+      /* Sidebar improvements */
+      .sidebar {
+        width: 280px;
+        background: #f8f9fa;
+        border-right: 1px solid #eaecef;
+      }
+      
+      .sidebar ul {
+        padding-left: 1.5em;
+      }
+      
+      .sidebar li {
+        margin: 0.4em 0;
+        line-height: 1.4;
+      }
+      
+      .sidebar a {
+        color: #2c3e50;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      
+      .sidebar a:hover {
+        color: var(--theme-color);
+        text-decoration: none;
+      }
+      
+      /* Links */
+      .markdown-section a {
+        color: var(--theme-color);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      
+      .markdown-section a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .content {
+          padding: 1rem;
+        }
+        
+        .sidebar {
+          width: 250px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -20,8 +110,69 @@
         repo: 'brettwatson77/rabs-public',
         loadSidebar: true,
         auto2top: true,
-        subMaxLevel: 3,
-        markdown: {},
+        subMaxLevel: 6,
+        maxLevel: 6,
+        nameLink: window.location.pathname,
+        notFoundPage: '404.md',
+        executeScript: true,
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
+        externalLinkTarget: '_blank',
+        externalLinkRel: 'noopener',
+        crossOrigin: true,
+        markdown: {
+          renderer: {
+            image: function(href, title, text) {
+              return '<img src="' + href + '" alt="' + (text || '') + '" title="' + (title || text || '') + '" style="max-width: 100%;">';
+            },
+            link: function(href, title, text) {
+              // Make external links open in new tab
+              if (href.startsWith('http') || href.startsWith('//')) {
+                return '<a href="' + href + '" target="_blank" rel="noopener" title="' + (title || '') + '">' + text + '</a>';
+              }
+              // Default handling for internal links
+              return '<a href="' + href + '" title="' + (title || '') + '">' + text + '</a>';
+            }
+          }
+        },
+        plugins: [
+          function(hook, vm) {
+            // Add copy button to code blocks
+            hook.doneEach(function() {
+              document.querySelectorAll('pre[data-lang]').forEach(function(pre) {
+                if (pre.querySelector('.docsify-copy-code-button')) return;
+                
+                const button = document.createElement('button');
+                button.className = 'docsify-copy-code-button';
+                button.title = 'Copy to clipboard';
+                button.innerHTML = '📋';
+                
+                button.addEventListener('click', function() {
+                  const code = pre.querySelector('code');
+                  const text = code.innerText;
+                  
+                  navigator.clipboard.writeText(text).then(function() {
+                    button.innerHTML = '✓';
+                    button.style.color = '#42b983';
+                    setTimeout(function() {
+                      button.innerHTML = '📋';
+                      button.style.color = '';
+                    }, 2000);
+                  }).catch(function() {
+                    button.innerHTML = '✗';
+                    button.style.color = '#ff6b6b';
+                    setTimeout(function() {
+                      button.innerHTML = '📋';
+                      button.style.color = '';
+                    }, 2000);
+                  });
+                });
+                
+                pre.style.position = 'relative';
+                pre.appendChild(button);
+              });
+            });
+          }
+        ]
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
@@ -35,7 +186,6 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-rust.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js"></script>
   </body>
 </html>

@@ -1,32 +1,15 @@
-- **assets/**
-  - **doc/**
-    - [data-1745066222452.csv](assets/doc/data-1745066222452.csv)
-    - [reconstruct attemot 2.txt](assets/doc/reconstruct attemot 2.txt)
-    - [Table test.pdf](assets/doc/Table test.pdf)
-  - **image/**
-    - [data.png](assets/image/data.png)
-    - [profilecolumns.png](assets/image/profilecolumns.png)
-    - [star.jpg](assets/image/star.jpg)
-  - **video/**
-    - [PCshare.mp4](assets/video/PCshare.mp4)
-    - [TSshare.mp4](assets/video/TSshare.mp4)
-  - [README](assets/README.md)
-- **backend/**
-  - [brainframe](backend/brainframe/README.md)
-  - [README](backend/README.md)
+- [assets](assets/README.md)
+- [backend](backend/README.md)
 - [docs](docs/README.md)
-- [frontend-next](frontend-next/README.md)
-- [frontend-reactnative](frontend-reactnative/README.md)
-- [frontend-vite](frontend-vite/README.md)
+- frontend-next/
+- frontend-reactnative/
+- frontend-vite/
 - [middleware](middleware/README.md)
-- **scripts/**
-  - [publicpush-almost.js](scripts/publicpush-almost.js.md)
-  - [README](scripts/README.md)
-- [swift-iOS](swift-iOS/README.md)
-- [swift-tvOS](swift-tvOS/README.md)
-- [swift-watchOS](swift-watchOS/README.md)
-- [tests](tests/MRmonitor.js.md)
+- [scripts](scripts/README.md)
+- swift-iOS/
+- swift-tvOS/
+- swift-watchOS/
+- tests/
 - [codeRULES](codeRULES.md)
 - [docGUIDE](docGUIDE.md)
 - [LICENSE.txt](LICENSE.txt)
-- [README](README.md)
