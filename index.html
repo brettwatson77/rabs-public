@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
     <style>
       /* Base styles */
       :root {
@@ -108,6 +109,7 @@
       window.$docsify = {
         name: 'RABS Docs',
         repo: 'brettwatson77/rabs-public',
+        basePath: '/',  // Ensure proper base path
         loadSidebar: true,
         auto2top: true,
         subMaxLevel: 6,
@@ -119,6 +121,16 @@
         externalLinkTarget: '_blank',
         externalLinkRel: 'noopener',
         crossOrigin: true,
+        noCompileLinks: [],  // Don't process links with these extensions
+        noEmoji: false,  // Enable emoji support
+        relativePath: false,  // Don't make paths relative
+        routerMode: 'history',  // Use clean URLs
+        themeColor: '#42b983',  // Match the theme color
+        topMargin: 10,  // Add some top margin
+        alias: {  // Define aliases for common paths
+          '/.*/_sidebar.md': '/_sidebar.md',
+          '/.*/_navbar.md': '/_navbar.md'
+        },
         markdown: {
           renderer: {
             image: function(href, title, text) {
